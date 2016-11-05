@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lan="en" ng-app="myApp">
+	<head>
+		<title>Graph</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" media="screen" herf="screen.css" />
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css" />
+
+		 <!-- Angular Material requires Angular.js Libraries -->
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+	  <!-- Angular Material Library -->
+	  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+	  
+	  <script src="site.js"></script>
+	  <script src="weight-height-average.js"></script>
+	</head>
+	<body>
+
+		<div ng-controller="AppCtrl" class="md-padding" ng-cloak>
+		  <div>
+		    <fieldset class="standard">
+		      <legend> Growth Charts</legend>
+
+
+
+	<div id="line_top_x"></div>
+
+					<div layout-wrap layout-gt-sm="row" >
+		        <div flex-gt-sm="50">
+		          <md-checkbox ng-model="data.cb1" aria-label="Weight"
+		          	ng-true-value="'show graph'" ng-false-value="'disappear graph'">
+		            Weight: {{ data.cb1 }}
+ 	
+		          </md-checkbox>
+		      <div layout-wrap layout-gt-sm="row" >
+		        <div flex-gt-sm="50">
+		          <md-checkbox ng-model="data.cb2" aria-label="Height"
+		          	ng-true-value="'show graph'" ng-false-value="'disappear graph'"
+		          	class="md-warn">
+		            Height: {{ data.cb2 }}
+		          </md-checkbox>
+		        </div>	
+		        <div flex-gt-sm="50">
+		          <md-checkbox ng-model="data.cb3" aria-label="Average" 
+		          	ng-true-value="'show graph'" ng-false-value="'disappear graph'"
+		          	class="md-primary">
+		            Average: {{ data.cb3 }}
+		          </md-checkbox>
+		        </div>	        
+		      </div>
+		    </fieldset>
+		  </div>
+		</div>	
+ 
+	</body>
+</html>
+
+<!--
+ 				<div layout="row" layout-wrap flex>
+          <div flex-xs flex="50">
+            <md-checkbox aria-label="Select All"
+                         ng-checked="isChecked()"
+                         md-indeterminate="isIndeterminate()"
+                         ng-click="toggleAll()">
+              <span ng-if="isChecked()">Un-</span>Select All
+            </md-checkbox>
+          </div>
+            <div class="demo-select-all-checkboxes" flex="100" ng-repeat="item in items">
+              <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)" ng-model="data" ng-true-value="'show graph'" ng-false-value="'disappear graph'" class="color()">
+               {{ item }} : {{ data }}
+              </md-checkbox>
+            </div>
+          </div>
+!-->
