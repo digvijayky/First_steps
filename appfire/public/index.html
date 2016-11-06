@@ -18,8 +18,8 @@
   <div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak>
 
 
-    <div class="back"></div>
-    <md-toolbar ng-Show="isauth()" class="md-hue-2">
+ 
+    <md-toolbar ng-show="isAuth()" class="md-hue-2">
       <div class="md-toolbar-tools">
 
          <md-button ng-click="toggleLeft()" ng-hide="isOpenLeft()"
@@ -46,7 +46,7 @@
   <section layout="row" flex>
 
     <md-sidenav
-        class="md-sidenav-left"
+        class="md-sidenav-left front"
         md-component-id="left"
         md-whiteframe="4">
  
@@ -59,6 +59,15 @@
 
       <md-content layout-padding ng-controller="LeftCtrl">
         <md-list flex>
+        <md-list-item class="md-3-line" ng-click="goHome()">
+          <img ng-src="img/profpic.jpg" class="md-avatar" alt="blahfa" />
+          <div class="md-list-item-text" layout="column">
+            <h3>Your baby is now making sounds!</h3>
+            <h4>-------------</h4>
+            <p>Next Milestone : firs word ! </p>
+          </div>
+        </md-list-item>
+        </md-list-item>
        
 
          <md-list-item ng-click="goProfile()">
@@ -110,34 +119,54 @@
 
 
   </section>
- 
+ <div class="ng-enter">
       <div ng-view></div>
- 
+    </div>
+ <div class="plusbtn" ng-cloak>
  <div class="lock-size" layout="row" layout-align="center center">
-      <md-fab-speed-dial md-open="demo.isOpen" md-direction="{{demo.selectedDirection}}"
-                         ng-class="demo.selectedMode">
+      <md-fab-speed-dial  md-direction="up" md-open="false" class="md-fling">
+                        
         <md-fab-trigger>
           <md-button aria-label="menu" class="md-fab md-warn">
-            <md-icon md-svg-src="img/icons/menu.svg"></md-icon>
-          </md-button>
+           <i class="material-icons md-36 ">add_circle</i>
         </md-fab-trigger>
 
         <md-fab-actions>
-          <md-button aria-label="Twitter" class="md-fab md-raised md-mini">
-                      <img src="https://maxcdn.icons8.com/Color/PNG/48/Data/timeline-48.png" title="Timeline" width="24">
-
+          <md-button aria-label="Activity" class="md-fab md-raised md-mini">
+          
           </md-button>
-          <md-button aria-label="Facebook" class="md-fab md-raised md-mini">
-                      <img src="https://maxcdn.icons8.com/Color/PNG/48/Data/timeline-48.png" title="Timeline" width="24">
+          <md-button aria-label="Activity" class="md-fab md-raised md-mini">
+          
+          </md-button>
+          <md-button aria-label="Activity" class="md-fab md-raised md-mini">
+          
+          </md-button>
+          <md-button aria-label="Activity" class="md-fab md-raised md-mini">
+          
+          </md-button>
 
+
+          <md-button aria-label="Facebook" class="md-fab md-raised md-mini">
+            
           </md-button>
           <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">
-                      <img src="https://maxcdn.icons8.com/Color/PNG/48/Data/timeline-48.png" title="Timeline" width="24">
-
+           
           </md-button>
         </md-fab-actions>
       </md-fab-speed-dial>
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 

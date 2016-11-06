@@ -3,7 +3,6 @@
 
   
 <div ng-controller="SelectAsyncController" layout="column" layout-align="center center" style="padding:40px" ng-cloak>
-  <p>Select can call an arbitrary function on show. If this function returns a promise, it will display a loading indicator while it is being resolved:</p>
   <div layout="column" layout-align="center center">
     <md-select placeholder="Select Profile" ng-model="profile" md-on-open="loadUsers()" style="min-width: 200px;">
       <md-option ng-value="user" ng-repeat="profile in profiles">{{profile.name}}</md-option>

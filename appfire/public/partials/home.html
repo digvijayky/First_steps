@@ -1,11 +1,14 @@
 
+
+
+
+
+
 <section layout="column" layout-align="none center">
 <div class="views">
- <md-toolbar class="tool2">
-    <div class="md-toolbar-tools ">My Messages</div>
-  </md-toolbar>
+ 
     <section>
-      <md-subheader class="md-primary">Unread Messages</md-subheader>
+      <md-subheader class="md-primary">What to look out for!</md-subheader>
       <md-list layout-padding>
       <div ng-repeat="item in items" ng-click="null"> 
         <md-list-item>
@@ -20,7 +23,9 @@
           </md-card-title-media>
         </md-card-title>
         <md-card-actions layout="row" layout-align="end center">
+
           <md-button>Not Yet</md-button>
+          <md-button>Info</md-button>
           <md-button ng-click="submitMilestone()">Yes</md-button>
         </md-card-actions>
 			</md-card>
@@ -30,13 +35,4 @@
     </section>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
 
