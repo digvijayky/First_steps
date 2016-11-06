@@ -1,0 +1,202 @@
+milestone = [
+		{		Age : "Newborn";
+				Group : "Gross Motor";
+				Title : "Moro reflex";
+				Description : "an infantile reflex normally present in all infants/newborns up to 3 or 4 months of age as a response to a sudden loss of support, when the infant feels as if it is falling."
+				
+		},
+		{		Age : "Newborn";
+				Group : "Gross Motor";
+				Title : "Grasp reflex";
+				Description : "When an object is placed in the infant's hand and strokes their palm, the fingers will close and they will grasp it with a palmar grasp."
+		},
+		{		Age : "2 Months";
+				Group : "Gross Motor";
+				Title : "Holds head up";
+				Description : "Lift her head when she's about a month old, and hold it up when placed in a sitting position."
+		},
+		{		Age : "2 Months";
+				Group : "Fine Motor";
+				Title : "Swipes at Objects";
+				Description : "Babies attempt to reach for dangling toys or other interesting objects"
+		},
+		{		Age : "2 Months";
+				Group : "Language";
+				Title : "Coos";
+				Description : "When babies start talking, they tend to have a rapt audience."
+		},
+		{		Age : "2 Months";
+				Group : "Social/Cognition";
+				Title : "Social smile";
+				Description : "An intentional gesture of warmth meant just for you."
+		},
+		{		Age : "4 Months";
+				Group : "Gross Motor";
+				Title : "Rolls front to back";
+				Description : "Kick himself over, from his tummy to his back, and flip from back to front because he needs stronger neck and arm muscles for that maneuver."
+		},
+		{		Age : "4 Months";
+				Group : "Fine Motor";
+				Title : "Grasps Objects";
+				Description : "Discovers how to use her hands. The development of binocular vision makes reaching and grasping possible."
+		},
+		{		Age : "4 Months";
+				Group : "Language";
+				Title : "Orients to voice";
+				Description : "Start orienting toward familiar voices."
+		},
+		{		Age : "4 Months";
+				Group : "Social/Cognition";
+				Title : "Laughs";
+				Description : "Smiling takes on an auditory dimension and turns into laughter."
+		},
+		{		Age : "6 Months";
+				Group : "Gross Motor";
+				Title : "Rolls from back to front";
+				Description : "4 months to 6 months babies do."
+		},
+		{		Age : "6 Months";
+				Group : "Gross Motor";
+				Title : "Sits upright";
+				Description : "Once his back and neck muscles are strong enough to hold him upright and he's figured out where to put his legs."
+		},
+		{		Age : "6 Months";
+				Group : "Fine Motor";
+				Title : "Transfers Objects";
+				Description : "Transfer objects from one hand to another or directly to their mouths."
+		},
+		{		Age : "6 Months";
+				Group : "Language";
+				Title : "Babbles";
+				Description : "Learn to talk in stages, beginning with sighs and coos, followed by strung-together consonant-vowel sounds like "a-ga" and "a-da"."
+		},
+		{		Age : "6 Months";
+				Group : "Social/Cognition";
+				Title : "Develops stranger anxiety";
+				Description : "A form of distress that children experience when exposed to people unfamiliar to them can occur."
+		},
+		{		Age : "6 Months";
+				Title : "Sleeps all night";
+				Description : "Nearly all babies are able to sleep through the night by 6 months, but when they do is very different depending on the child."
+		},
+		{		Age : "9 Months";
+				Group : "Gross Motor";
+				Title : "Crawls";
+				Description : "Babies typically begin to crawl between 6 and 10 months, although some may skip the crawling phase altogether and go straight to pulling up, cruising, and walking."
+		},
+		{		Age : "9 Months";
+				Group : "Fine Motor";
+				Title : "Pincer grasp";
+				Description : "Babies'll be able to pick up smaller objects (like pieces of food) between their thumb and forefinger."
+		},
+		{		Age : "9 Months";
+				Group : "Language";
+				Title : "Non-specific words";
+				Description : "Around 9-10 Months babies can imitate non speech sounds, and speech-like sounds if they are in the child's repertoire of sounds."
+		},
+		{		Age : "9 Months";
+				Group : "Social/Cognition";
+				Title : "Responds to name";
+				Description : "Babies know their name now and understand that you're speaking to them."
+		},
+		{		Age : "12 Months";
+				Group : "Gross Motor";
+				Title : "Stands on own";
+				Description : "Babies may be able to pull himself up to stand and sit back down with confidence. And they may even be able to stand alone."
+		},
+		{		Age : "12 Months";
+				Group : "Fine Motor";
+				Title : "Mature pincer grasp";
+				Description : "Babies will be able to pinch small objects using the tip of the index finger and the thumb."
+		},
+		{		Age : "12 Months";
+				Group : "Language";
+				Title : "Specific words "mama"";
+				Description : "Babies might say "mama" or "dada" for the first time, and will communicate using body language, like pointing and shaking his or her head."
+		},
+		{		Age : "12 Months";
+				Group : "Social/Cognition";
+				Title : "Recognizes pictures in a book/magazine";
+				Description : "Babies can learn to recognize the beginning of a book (front cover), how to turn a page, and begin to distinguish images from words on a page using Board Books."
+		},
+		{		Age : "15 Months";
+				Group : "Gross Motor";
+				Title : "Walks";
+				Description : "Most babies take their first steps sometime between 9 and 12 months and are walking well by the time they're 14 or 15 months old. Don't worry if your child takes a little longer, though. Some perfectly normal children don't walk until they're 16 or 17 months old."
+		},
+		{		Age : "15 Months";
+				Group : "Fine Motor";
+				Title : "Uses a cup";
+				Description : "The sippy cup at that age was just to allow the babies to practice holding and moving the cup around."
+		},
+		{		Age : "15 Months";
+				Group : "Language";
+				Title : "Speaks 4-6 words";
+				Description : ""
+		},
+		{		Age : "15 Months";
+				Group : "Social/Cognition";
+				Title : "Throws temper tantrum";
+				Description : ""
+		},
+		{		Age : "18 Months";
+				Group : "Gross Motor";
+				Title : "Throws a ball";
+				Description : ""
+		},
+		{		Age : "18 Months";
+				Group : "Fine Motor";
+				Title : "Uses spoon for solid foods";
+				Description : ""
+		},
+		{		Age : "18 Months";
+				Group : "Language";
+				Title : "Names common objects";
+				Description : ""
+		},
+		{		Age : "18 Months";
+				Group : "Social/Cognition";
+				Title : "Begins toilet training";
+				Description : ""
+		},
+		{		Age : "24 Months";
+				Group : "Gross Motor";
+				Title : "Starts running";
+				Description : ""
+		},
+		{		Age : "24 Months";
+				Group : "Fine Motor";
+				Title : "Uses spoon for semi-solids";
+				Description : ""
+		},
+		{		Age : "24 Months";
+				Group : "Language";
+				Title : "Speaks 2-word sentence";
+				Description : ""
+		},
+		{		Age : "24 Months";
+				Group : "Social/Cognition";
+				Title : "Can follow a 2-step command";
+				Description : ""
+		},
+		{		Age : "36 Months";
+				Group : "Gross Motor";
+				Title : "Can ride a tricycle";
+				Description : ""
+		},
+		{		Age : "36 Months";
+				Group : "Fine Motor";
+				Title : "Can eat neatly with utensils";
+				Description : ""
+		},
+		{		Age : "36 Months";
+				Group : "Language";
+				Title : "Speaks 3-word sentence";
+				Description : ""
+		},
+		{		Age : "36 Months";
+				Group : "Social/Cognition";
+				Title : "Knows first and last names";
+				Description : ""
+		}
+]

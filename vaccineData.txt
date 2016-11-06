@@ -1,0 +1,89 @@
+milestone = [
+		{		Age : "Newborn";
+				Vaccine : "HepB";
+		},
+		{		Age : "1 - 2 month";
+				Vaccine : "HepB";
+		},
+		{		Age : "2 month";
+				Vaccine : "RV";
+		},
+		{		Age : "2 month";
+				Vaccine : "DTaP";
+		},
+		{		Age : "2 month";
+				Vaccine : "Hib";
+		},
+		{		Age : "2 month";
+				Vaccine : "PCV";
+		},
+		{		Age : "2 month";
+				Vaccine : "IPV";
+		},
+		{		Age : "4 month";
+				Vaccine : "RV";
+		},
+		{		Age : "4 month";
+				Vaccine : "DTaP";
+		},
+		{		Age : "4 month";
+				Vaccine : "Hib";
+		},
+		{		Age : "4 month";
+				Vaccine : "PCV";
+		},
+		{		Age : "4 month";
+				Vaccine : "IPV";
+		},
+		{		Age : "6 month";
+				Vaccine : "RV";
+		},
+		{		Age : "6 month";
+				Vaccine : "DTaP";
+		},
+		{		Age : "6 month";
+				Vaccine : "Hib";
+		},
+		{		Age : "6 month";
+				Vaccine : "PCV";
+		},
+		{		Age : "6 - 18 month";
+				Vaccine : "HepB";
+		},
+		{		Age : "6 - 18 month";
+				Vaccine : "IPV";
+		},
+		{		Age : "6 month - 6 years";
+				Vaccine : "Influenza(Yearly)";
+		},
+		{		Age : "12 - 15 month";
+				Vaccine : "Hib";
+		},
+		{		Age : "12 - 15 month";
+				Vaccine : "PCV";
+		},
+		{		Age : "12 - 15 month";
+				Vaccine : "MMR";
+		},
+		{		Age : "12 - 15 month";
+				Vaccine : "Varicella";
+		},
+		{		Age : "12 - 23 month";
+				Vaccine : "HepA";
+		},
+		{		Age : "15 - 18 month";
+				Vaccine : "DTaP";
+		},
+		{		Age : "4 - 6 years";
+				Vaccine : "DTaP";
+		},
+		{		Age : "4 - 6 years";
+				Vaccine : "IPV";
+		},
+		{		Age : "4 - 6 years";
+				Vaccine : "MMR";
+		},
+		{		Age : "4 - 6 years";
+				Vaccine : "Varicella";
+		}
+]
