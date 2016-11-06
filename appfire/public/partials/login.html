@@ -1,0 +1,35 @@
+<section layout="column" layout-align="center center">
+<div class="logo">
+    <img class="img-responsive " ng-src="img/firststeps.png" atl="slkfngl"/>
+</div>
+
+  <div class="login">
+  
+      <form name="clientLogin">
+        <md-input-container>
+          <input ng-model="user.name" name="userName" type="text" placeholder="Name" ng-required="true">
+          <div ng-messages="clientLogin.userName.$error">
+            <div ng-message="required">Your full name is required.</div>
+          </div>
+        </md-input-container>
+        <md-input-container md-no-float>
+          <!-- Use floating placeholder instead of label -->
+          <input ng-model="user.password" type="text" placeholder="Password" ng-required="true" name="userPassword">
+          <div ng-messages="clientLogin.userPassword.$error">
+            <div ng-message="required">Your password is required.</div>
+          </div>
+        </md-input-container>
+
+        <md-button class="md-raised md-primary">Login</md-button>
+      </form>
+      <br>
+    <footer>
+     
+      <p>You Gotta Love Ya Baby
+    </footer>
+
+  </div>
+
+
+</div>
+</section>

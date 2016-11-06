@@ -1,0 +1,42 @@
+
+<section layout="column" layout-align="none center">
+<div class="views">
+ <md-toolbar class="tool2">
+    <div class="md-toolbar-tools ">My Messages</div>
+  </md-toolbar>
+    <section>
+      <md-subheader class="md-primary">Unread Messages</md-subheader>
+      <md-list layout-padding>
+      <div ng-repeat="item in items" ng-click="null"> 
+        <md-list-item>
+            <md-card>
+        <md-card-title class="md-dense" flex="49">
+          <md-card-title-text>
+            <span class="md-headline">{{item.title}}</span>
+            <span class="md-subhead">{{item.prompt}}</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-sm card-media"><img ng-src="{{item.icon}}" alt="{{item.icon}}"/></div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Not Yet</md-button>
+          <md-button ng-click="submitMilestone()">Yes</md-button>
+        </md-card-actions>
+			</md-card>
+        </md-list-item>
+    </div>
+      </md-list>
+    </section>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
