@@ -31,13 +31,14 @@ function drawChart() {
           title: 'Baby Infant Growth Charts',
           subtitle: 'each unit'
         },
-        width: 900,
-        height: 500,
+        width: '100%',
+        height: '100%',
         axes: {
           x: {
             0: {side: 'bottom'}
           }
-        }
+        },
+        chartArea : {width : '60%'}
       };
 
       var chart = new google.charts.Line(document.getElementById('line_top_x'));
@@ -45,3 +46,18 @@ function drawChart() {
       chart.draw(data, options);
     }
     
+    $(window).resize(function(){
+      drawChart();
+    });
+        
+    /*
+    function resize () {
+      chart.draw(data, options);
+    }
+    if (window.addEventListener) {
+      window.addEventListener('resize', resize);
+    }
+    else {
+      window.attachEvent('onresize', resize);
+    }
+    */
