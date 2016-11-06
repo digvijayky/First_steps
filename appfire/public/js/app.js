@@ -9,7 +9,7 @@
   firebase.initializeApp(config);
 
 
-var app = angular.module('myApp', ['ngMaterial', 'ngRoute', 'firebase']);
+var app = angular.module('myApp', ['ngMaterial', 'ngRoute', 'firebase', 'ngAnimate']);
 
 
 
@@ -24,18 +24,18 @@ var app = angular.module('myApp', ['ngMaterial', 'ngRoute', 'firebase']);
   .when("/events", {templateUrl: "partials/events.html", controller: "PageCtrl"})
   .when("/login", {templateUrl: "partials/login.html", controller: "LoginController"})
 /* etc… routes to other pages… */
-.otherwise("/home", {templateUrl: "partials/main.html", controller: "PageCtrl"});
+.otherwise("/", {templateUrl: "partials/main.html", controller: "PageCtrl"});
 
 // else 404
  $mdThemingProvider.theme('default')
-    .primaryPalette('light-blue')
-    .accentPalette('indigo');
+    .primaryPalette('brown')
+    .accentPalette('orange');
 
    
 
 });
 
-  app.controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log, $routeParams, $rootScope) {
+  app.controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log, $routeParams, $rootScope, $location) {
     $scope.toggleLeft = buildDelayedToggler('left');
     $scope.toggleRight = buildToggler('right');
     $scope.isOpenRight = function(){
@@ -47,6 +47,17 @@ var app = angular.module('myApp', ['ngMaterial', 'ngRoute', 'firebase']);
     name: "tahjy T",
     profpic: "img/profpic.jpg"
    };
+   $scope.isAuth=function(){
+   
+
+    if ($location.path() != "/login")
+ {
+
+      return true;}
+    else{
+
+      return false;}
+   }
  
    
 
@@ -142,6 +153,7 @@ var app = angular.module('myApp', ['ngMaterial', 'ngRoute', 'firebase']);
           $rootScope.pagetitle="Login";
     };
 
+
   });
   app.controller('PageCtrl', function($scope, $firebase, $rootScope, $location ){
 $scope.items=[
@@ -211,8 +223,23 @@ $scope.items=[
     }, 650);
   };
 });
-    app.controller('LoginController', function(){
+    app.controller('LoginController', function($location, $scope){
+$scope.loginwithgoogle=function(){
+      $location.path("/");
+      console.log('authentication successful');
 
+    };
 
+    });
+     app.controller('DemoCtrl', function() {
+      this.topDirections = ['left', 'up'];
+      this.bottomDirections = ['down', 'right'];
+
+      this.isOpen = false;
+
+     
+      this.selectedMode = 'md-fling';
+
+      this.selectedDirection = 'up';
     });
 

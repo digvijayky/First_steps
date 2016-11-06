@@ -5,11 +5,11 @@
 
   <div class="login">
   
-      <form name="clientLogin">
+      <form name="clientLogin" layout="column" layout-align="center center">
         <md-input-container>
-          <input ng-model="user.name" name="userName" type="text" placeholder="Name" ng-required="true">
+          <input ng-model="user.email" name="userEmail" type="email" placeholder="Email" ng-required="true">
           <div ng-messages="clientLogin.userName.$error">
-            <div ng-message="required">Your full name is required.</div>
+            <div ng-message="required">proper email</div>
           </div>
         </md-input-container>
         <md-input-container md-no-float>
@@ -20,8 +20,9 @@
           </div>
         </md-input-container>
 
-        <md-button class="md-raised md-primary">Login</md-button>
+        <md-button ng-click="login()" class="md-raised md-primary">Login</md-button>
       </form>
+      <md-button ng-click="loginwithgoogle()" class="google md-raised md-accent">Sign in with Google</md-button>
       <br>
     <footer>
      
@@ -31,5 +32,5 @@
   </div>
 
 
-</div>
+
 </section>
